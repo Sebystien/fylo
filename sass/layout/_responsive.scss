@@ -1,0 +1,27 @@
+@media (max-width: 40rem) {
+  header {
+    text-align: center;
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  //Components
+
+  input {
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+  }
+  /* input[type="text"] {
+    width: 100%;
+  } */
+  .flexit {
+    flex-direction: column-reverse;
+
+    &__left,
+    &__right {
+      width: 100%;
+    }
+  }
+}

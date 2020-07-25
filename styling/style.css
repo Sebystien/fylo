@@ -1,0 +1,206 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  list-style: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.row,
+.flexit {
+  max-width: 114rem;
+  width: 90%;
+  margin: 0 auto; }
+
+.flexit {
+  display: flex; }
+  .flexit__left {
+    width: 50%;
+    padding-top: 10rem; }
+  .flexit__right {
+    padding-top: 10rem;
+    width: 50%; }
+    .flexit__right .img {
+      width: 100%; }
+
+.cta:link,
+.cta:visited {
+  color: #3c9f8f;
+  text-decoration: none;
+  border-bottom: #3c9f8f 1px solid;
+  padding-bottom: 3px;
+  margin-bottom: 4rem;
+  display: inline-block; }
+  .cta:link .arrow-button,
+  .cta:visited .arrow-button {
+    vertical-align: middle; }
+
+body {
+  font-weight: 400;
+  font-family: "Open sans", sans-serif;
+  color: #070439;
+  font-size: 1.5rem; }
+
+a {
+  font-size: 1.4rem; }
+
+h1,
+h2,
+h3 {
+  font-family: "Raleway";
+  font-weight: 700;
+  margin-bottom: 2rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+p {
+  line-height: 1.7;
+  margin-bottom: 2rem; }
+
+blockquote {
+  font-size: 1.3rem;
+  line-height: 1.7; }
+  blockquote cite {
+    font-size: 1.2rem; }
+
+.btn {
+  color: #f6f6fe;
+  background: #3065f8;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  padding: 1.5rem 5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer; }
+  .btn:focus {
+    outline: none; }
+  .btn:active {
+    transform: translateY(1px); }
+
+.top {
+  margin-left: 1rem; }
+
+input[type="text"] {
+  padding: 1rem 1rem;
+  width: 50%;
+  color: #bfbfbf;
+  border-radius: 4px;
+  border: 1px solid #070439; }
+  input[type="text"]:focus {
+    outline: none; }
+
+.before-bottom input {
+  border: none;
+  box-shadow: none; }
+
+.before-bottom .bottom {
+  display: block; }
+
+.before-bottom .btn-bottom {
+  margin-top: 2rem; }
+
+/* section {
+  height: 90vh;
+}
+ */
+.testimonials {
+  margin-top: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+  background: url("../images/bg-curve-desktop.svg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .testimonials blockquote {
+    background: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    padding: 2%;
+    width: 50%;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    text-align: left; }
+    .testimonials blockquote::before {
+      content: "\201C";
+      display: block;
+      font-size: 3rem; }
+    .testimonials blockquote cite {
+      display: block;
+      margin-top: 2.5rem; }
+      .testimonials blockquote cite img {
+        width: 4rem;
+        border-radius: 50%;
+        margin-right: 1rem; }
+      .testimonials blockquote cite span {
+        display: inline-block;
+        vertical-align: top; }
+
+.before-bottom {
+  background: #585989;
+  color: #f6f6fe;
+  padding-bottom: 5rem; }
+  .before-bottom p {
+    width: 80%; }
+
+footer {
+  background: #070439;
+  color: #f6f6fe;
+  padding: 10rem 0; }
+  footer .logo-bottom {
+    padding-bottom: 2rem; }
+
+.last-flex {
+  margin-top: 2rem;
+  justify-content: center; }
+  .last-flex .col-1,
+  .last-flex .col-2,
+  .last-flex .col-3 {
+    flex: 1; }
+  .last-flex .col-1 div {
+    margin-bottom: 2rem; }
+    .last-flex .col-1 div img {
+      margin-right: 1rem; }
+
+.nav {
+  padding: 3rem 0; }
+  .nav__logo-box {
+    float: left; }
+  .nav__logo {
+    height: 2.7rem;
+    width: auto; }
+  .nav__menu {
+    float: right; }
+    .nav__menu--links li {
+      display: inline-block;
+      padding: 0 2.5rem; }
+    .nav__menu--links li a:visited, .nav__menu--links li a:link {
+      text-decoration: none;
+      text-transform: capitalize;
+      color: #585989; }
+  .nav::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media (max-width: 40rem) {
+  header {
+    text-align: center; }
+    header h1 {
+      font-size: 2.5rem; }
+  input {
+    display: block;
+    width: 100%;
+    margin: 2rem 0; }
+  /* input[type="text"] {
+    width: 100%;
+  } */
+  .flexit {
+    flex-direction: column-reverse; }
+    .flexit__left, .flexit__right {
+      width: 100%; } }

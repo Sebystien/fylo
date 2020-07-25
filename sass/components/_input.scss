@@ -1,0 +1,44 @@
+.btn {
+  color: $neutral-1;
+  background: $accent-1;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  padding: 1.5rem 5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.top {
+  margin-left: 1rem;
+}
+input[type="text"] {
+  padding: 1rem 1rem;
+  width: 50%;
+
+  color: $neutral-2;
+  border-radius: 4px;
+  border: 1px solid $primary-dark-blue;
+  &:focus {
+    outline: none;
+  }
+}
+.before-bottom {
+  input {
+    border: none;
+    box-shadow: none;
+  }
+  .bottom {
+    display: block;
+  }
+  .btn-bottom {
+    margin-top: 2rem;
+  }
+}
